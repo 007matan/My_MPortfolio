@@ -3,68 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Developer Portfolio</title>
+    <title>Software Engineering Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; }
-        h1, h2 { color: #333; }
-        a { color: blue; text-decoration: none; }
-        .section { margin-bottom: 20px; }
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1, h2, h3 { color: #333; }
+        .container { max-width: 800px; margin: auto; }
+        .project, .experience, .education { margin-bottom: 30px; }
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
-    <h1>Mobile Developer Role – Portfolio</h1>
-    <p><a href="https://github.com/007matan">GitHub Profile</a></p>
-    
-    <div class="section">
-        <h2>Final Project (Mobile Security) – Training Healthy Habits</h2>
-        <p><strong>Technologies:</strong> Android Studio, Java</p>
-        <p>This project involved developing an Android application capable of recognizing tapping patterns on a smartphone and displaying user-collected data through an intuitive and user-friendly interface.</p>
-        <h3>Engineering Challenges:</h3>
-        <ul>
-            <li>Ensuring the application runs continuously in the background, even when not actively in use.</li>
-            <li>Accurately detecting intentional tapping patterns while filtering out background noise and unintentional taps.</li>
-        </ul>
-        <h3>Objective & Solution:</h3>
-        <p>We leveraged data from the gyroscope sensor to detect user taps, refining our detection methods to achieve an accuracy rate of approximately 90%.</p>
-    </div>
-    
-    <div class="section">
-        <h2>Hackathon World</h2>
-        <p><strong>Technologies:</strong> Android Studio, Java</p>
-        <p>Hackathon World is a personal project designed to support hackathon teams by providing a comprehensive management board for tracking development progress and tasks.</p>
-        <h3>Engineering Challenges:</h3>
-        <ul>
-            <li>Designing an intuitive and efficient user interface to streamline task management.</li>
-            <li>Implementing real-time synchronization to ensure seamless collaboration among team members.</li>
-        </ul>
-        <p>By incorporating structured task tracking and real-time updates, Hackathon World enhances productivity during hackathons.</p>
-    </div>
-    
-    <div class="section">
-        <h2>Track From Behind</h2>
-        <p><strong>Technologies:</strong> Android Studio, Java</p>
-        <p>An Android application designed to enhance the cycling experience by providing advanced tracking features such as pace monitoring, workout distance measurement, and calorie counting.</p>
-    </div>
-    
-    <div class="section">
-        <h2>Paw Partners</h2>
-        <p><strong>Technologies:</strong> Xcode, Swift</p>
-        <p>Paw Partners is a comprehensive pet management application that helps users track daily walks, feeding schedules, and essential treatments, ensuring optimal pet care.</p>
-    </div>
-    
-    <div class="section">
+    <div class="container">
+        <h1>Software Engineering Role – Portfolio</h1>
+        <p><a href="https://github.com/007matan">GitHub Profile</a></p>
+        
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Final Project (Mobile Security) – Training Healthy Habits (Android Studio, Java)</h3>
+            <h4>Project Overview:</h4>
+            <p>Developed an Android application that detects and analyzes user tapping patterns to promote healthy smartphone usage habits.</p>
+            <h4>Engineering Challenges:</h4>
+            <ul>
+                <li>Ensuring continuous background execution while maintaining system performance.</li>
+                <li>Filtering out unintentional taps to provide accurate data analysis.</li>
+            </ul>
+            <h4>Objective & Solution:</h4>
+            <p>Implemented a machine-learning-based algorithm using gyroscope data to distinguish between deliberate and accidental taps, achieving an accuracy rate of 90%.</p>
+        </div>
+        
+        <div class="project">
+            <h3>Minesweepers Game (Visual Studio, C)</h3>
+            <h4>Project Overview:</h4>
+            <p>Created a fully functional Minesweeper game with a recursive algorithm to efficiently uncover adjacent safe cells.</p>
+            <h4>Engineering Challenges:</h4>
+            <ul>
+                <li>Designing an optimal recursive approach to prevent infinite recursion and optimize performance.</li>
+                <li>Managing memory efficiently to handle larger game boards without performance degradation.</li>
+            </ul>
+            <h4>Objective & Solution:</h4>
+            <p>Implemented an optimized state-management system, reducing unnecessary recursive calls while ensuring smooth gameplay.</p>
+        </div>
+
+        <div class="project">
+            <h3>Hackathon World (Android Studio, Java)</h3>
+            <h4>Project Overview:</h4>
+            <p>Developed a team collaboration application tailored for hackathons, providing real-time task tracking and management features.</p>
+            <h4>Engineering Challenges:</h4>
+            <ul>
+                <li>Creating a real-time synchronization system for seamless collaboration.</li>
+                <li>Designing an intuitive UI to allow quick task assignments and status updates.</li>
+            </ul>
+            <h4>Objective & Solution:</h4>
+            <p>Utilized Firebase Realtime Database to implement instant updates across devices, enhancing team productivity.</p>
+        </div>
+
+        <div class="project">
+            <h3>Track From Behind (Android Studio, Java)</h3>
+            <h4>Project Overview:</h4>
+            <p>Designed a fitness tracking application for cyclists, providing real-time pace monitoring, distance measurement, and calorie tracking.</p>
+            <h4>Engineering Challenges:</h4>
+            <ul>
+                <li>Ensuring continuous activity tracking even when the app runs in the background.</li>
+                <li>Designing a user-friendly interface to display real-time data effectively.</li>
+            </ul>
+            <h4>Objective & Solution:</h4>
+            <p>Implemented an efficient background service and optimized data visualization techniques to ensure an accurate and seamless experience.</p>
+        </div>
+
+        <div class="project">
+            <h3>Josephus Flavius – Seminar (PyCharm, Python)</h3>
+            <h4>Project Overview:</h4>
+            <p>Explored a mathematical problem where soldiers in a circle are systematically eliminated until one remains, implementing algorithmic solutions in Python.</p>
+            <h4>Engineering Challenges:</h4>
+            <ul>
+                <li>Developing an efficient algorithm to simulate the elimination process.</li>
+                <li>Comparing the performance of recursive and iterative solutions.</li>
+            </ul>
+            <h4>Objective & Solution:</h4>
+            <p>Implemented an optimized Josephus problem solver using both recursion and iteration, enhancing computational efficiency.</p>
+        </div>
+
+        <div class="project">
+            <h3>Paw Partners (Xcode, Swift)</h3>
+            <h4>Project Overview:</h4>
+            <p>Developed a pet management app allowing owners to track feeding schedules, walks, and medical treatments.</p>
+            <h4>Engineering Challenges:</h4>
+            <ul>
+                <li>Implementing a structured scheduling system to organize pet care routines.</li>
+                <li>Creating an engaging and intuitive UI for easy usability.</li>
+            </ul>
+            <h4>Objective & Solution:</h4>
+            <p>Designed a feature-rich application using Swift, integrating scheduling logic and an interactive user interface for a seamless experience.</p>
+        </div>
+        
         <h2>Professional Experience</h2>
-        <p><strong>System Trainer & Implementer | John Bryce (1.5 Years)</strong></p>
-        <ul>
-            <li><strong>Bank Leumi:</strong> Implemented banking systems, providing technical and operational support.</li>
-            <li><strong>Tnuva:</strong> Led the implementation of a new order management system, replacing the previous phone-based workflow.</li>
-        </ul>
-    </div>
-    
-    <div class="section">
+        <div class="experience">
+            <h3>System Trainer & Implementer | John Bryce | 2 Years</h3>
+            <ul>
+                <li><strong>Bank Leumi (A Year and ש half):</strong> Implemented banking systems, provided technical and operational support, resolved real-time issues, and trained employees.</li>
+                <li><strong>Tnuva (Six Months):</strong> Led the transition to a digital order management system, trained employees, and ensured smooth adoption of the new workflow.</li>
+            </ul>
+        </div>
+        
         <h2>Education</h2>
-        <p><strong>Tel-Aviv Academic College of Engineering Afeka</strong> - B.Sc. Software Engineering (2019 - 2024) GPA: 80</p>
-        <p><strong>Netanya Academic College of Engineering and Technology Hermelin</strong> - B.Sc. Software Technician (2015 - 2016) GPA: 80</p>
+        <div class="education">
+            <h3>Tel-Aviv Academic College of Engineering Afeka</h3>
+            <p>Bachelor of Science - Software Engineering (2019 - 2024), GPA - 80</p>
+            <h3>Netanya Academic College of Engineering and Technology Hermelin</h3>
+            <p>Bachelor of Science - Software Technician (2015 - 2016), GPA - 80</p>
+        </div>
     </div>
 </body>
 </html>
